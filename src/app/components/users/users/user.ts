@@ -1,3 +1,4 @@
+import { EmployeeType } from "../employee-type/EmployeeType";
 
 export class User {
     constructor(
@@ -11,7 +12,7 @@ export class User {
         public dateOfBirth: Date,
         public dateOfJoining: Date,
         public dateOfEnding?: Date,
-        //public employee_type: string
+        //public employee_type: EmployeeType
     ) { }
 
 }

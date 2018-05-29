@@ -11,13 +11,20 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { UsersComponent } from './components/users/users.component';
+import { UsersComponent } from './components/users/users/users.component';
 import { UserService } from './services/user.service';
+import { EmployeeTypeComponent } from './components/users/employee-type/employee-type.component';
+import { EmployeeTypeAddComponent } from './components/users/employee-type-add/employee-type-add.component';
+import { CompanyComponent } from './components/company/company.component';
+import { EmployeeTypeUpdateComponent } from './components/users/employee-type-update/employee-type-update.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'users', component: UsersComponent },
+  { path: 'employeeTypes', component: EmployeeTypeComponent },
+  { path: 'employeeTypes/addEmployeeType', component: EmployeeTypeAddComponent },
+  { path: 'employeeTypes/updateEmployeeType/:id', component: EmployeeTypeUpdateComponent },
 ];
 
 @NgModule({
@@ -27,7 +34,11 @@ const appRoutes: Routes = [
     FooterComponent,
     LoginComponent,
     MenuComponent,
-    UsersComponent
+    UsersComponent,
+    EmployeeTypeComponent,
+    EmployeeTypeAddComponent,
+    CompanyComponent,
+    EmployeeTypeUpdateComponent
   ],
   imports: [
     BrowserModule,
