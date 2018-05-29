@@ -15,7 +15,7 @@ import { UsersComponent } from './components/users/users/users.component';
 import { UserService } from './services/user.service';
 import { EmployeeTypeComponent } from './components/users/employee-type/employee-type.component';
 import { EmployeeTypeAddComponent } from './components/users/employee-type-add/employee-type-add.component';
-import { CompanyComponent } from './components/company/company.component';
+import { CompanyComponent } from './components/company/company/company.component';
 import { EmployeeTypeUpdateComponent } from './components/users/employee-type-update/employee-type-update.component';
 
 const appRoutes: Routes = [
