@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+
+<!--ul>
+  <li *ngFor="let user of users">
+    <a routerLink="/detail/{{user.id}}">
+      <span class="badge">{{user.id}}</span> {{user.firstName}} {{user.lastName}}
+    </a>
+    <!--button class="delete" title="delete employee" (click)="delete(employee)">x</button>
+  </li>
+</ul-->
+<div class = "container">
+<table class="table table-sm table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Login Name</th>
+      <th scope="col">Employee ID</th>
+      <th scope="col">Email</th>
+      <th scope="col">Status</th>
+      <th scope="col">Supervisor</th> 
+      <th scope="col">Start Date</th>
+      <th scope="col">End Date</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let i = index ">
+      <th scope="row">{{i+1}}</th>
+      <td>{{user.firstName}} {{user.lastName}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.userID}}</td>
+      <td>{{user.emailAddress}}</td>
+      <td>{{user.userID}}</td>
+      <td></td>
+      <td>{{user.dateOfJoining}}</td>
+      <td>{{user.dateOfEnding}}</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>

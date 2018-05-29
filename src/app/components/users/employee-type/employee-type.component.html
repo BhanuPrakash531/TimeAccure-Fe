@@ -1,0 +1,27 @@
+<app-header>
+</app-header>
+<br>
+<div class="container">
+  <a routerLink="addEmployeeType"	class="btn btn-primary btn-sm" role="button" routerLinkActive="active">+ Add Employee Type</a>
+</div>
+<br>
+<div class="container">
+  <table class="table table-sm table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employeeType of employeeTypes; let i = index ">
+        <th scope="row">{{i+1}}</th>
+        <td ><a routerLink="updateEmployeeType/{{employeeType.id}}/" routerLinkActive="active"><span>{{employeeType.employeeType}}</span></a></td>
+        <td>{{employeeType.employeeTypeDescription}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br><br><br><br><br><br><br>
+<app-footer></app-footer>
