@@ -1,4 +1,4 @@
-import '../../company/company';
+import { Company } from "../../company/company/company";
 
 export class EmployeeType {
     constructor(

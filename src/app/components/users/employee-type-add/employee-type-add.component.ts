@@ -3,8 +3,8 @@ import { UserService } from '../../../services/user.service';
 import { EmployeeType } from '../employee-type/EmployeeType';
 
 import { Location } from '@angular/common';
-import { Company } from '../../company/company';
-import { Address } from '../../company/address';
+import { Company } from '../../company/company/company';
+import { Address } from '../../company/company/address';
 
 @Component({
   selector: 'app-employee-type-add',
